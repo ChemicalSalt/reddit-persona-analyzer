@@ -1,4 +1,6 @@
-praw
-openai
-python-dotenv
+playwright
+nltk
+spacy
 tqdm
+python-dotenv
+openai
