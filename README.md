@@ -1,6 +1,6 @@
 # Reddit Persona Analyzer
 
-This project scrapes a Reddit user's public posts and comments and generates a detailed user persona based solely on that data, citing original posts/comments. 
+ Reddit Persona Analyzer scrapes a Reddit user's public posts and comments and generates a detailed user persona based solely on that data, citing original posts/comments. 
 
 ## Setup and Usage
 
