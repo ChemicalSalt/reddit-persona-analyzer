@@ -1,6 +1,4 @@
 playwright
 nltk
 spacy
-tqdm
-python-dotenv
-openai
+
