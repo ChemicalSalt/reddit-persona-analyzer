@@ -1,46 +1,28 @@
 # Reddit Persona Analyzer
 
-This project scrapes a Reddit user's public posts and comments and generates a detailed user persona based solely on that data, citing original posts/comments. It is part of the BeyondChats AI/LLM Engineer Intern assignment.
+This project scrapes a Reddit user's public posts and comments and generates a detailed user persona based solely on that data, citing original posts/comments. 
 
 ## Setup and Usage
 
-1. Clone this repository:
-git clone https://github.com/ChemicalSalt/reddit-persona-analyzer.git
+1. Clone this repository:  
+git clone https://github.com/ChemicalSalt/reddit-persona-analyzer.git  
 cd reddit-persona-analyzer
 
-2. (Optional) Create and activate a Python virtual environment:
-python -m venv venv
-# Windows: venv\Scripts\activate
-# macOS/Linux: source venv/bin/activate
+2. (Optional) Create and activate a Python virtual environment:  
+python -m venv venv  
+Windows: venv\Scripts\activate  
+macOS/Linux: source venv/bin/activate
 
-3. Install dependencies:
+3. Install dependencies:  
 pip install -r requirements.txt
 
-4. Create a `.env` file in the project root with your API keys:
-REDDIT_CLIENT_ID=your_reddit_client_id
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
-REDDIT_USER_AGENT=your_user_agent
-OPENAI_API_KEY=your_openai_api_key
+4. Install Playwright browsers:  
+playwright install
 
-5. Run the script with a Reddit profile URL argument:
-python reddit_persona.py https://www.reddit.com/user/username/
+5. Download SpaCy English model:  
+python -m spacy download en_core_web_sm
 
-The output persona text file will be saved in the project folder.
-
-## Requirements
-
-- Python 3.8+
-- praw
-- openai
-- python-dotenv
-- tqdm
-
-## Notes
-
-- Only publicly available Reddit data is accessed.
-- No private or sensitive user data is collected.
-- Code follows PEP-8 style guidelines.
-- Persona is generated strictly from scraped data with citations.
-- This repo is the submission for the BeyondChats internship assignment.
-
-For any queries, contact BeyondChats on Internshala.
+6. Run the script:  
+python reddit_persona.py  
+- When prompted, enter the Reddit username (without `/user/` or full URL).  
+- The output persona text file (`<username>_persona.txt`) will be saved in the project folder.
